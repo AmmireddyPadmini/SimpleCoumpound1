@@ -1,0 +1,13 @@
+package com.epam.epamprojectonsimplecompound;
+
+
+import java.util.*;
+class SimpleCompoundInterest
+{
+	SimpleCompoundInterest(double pricipleamount,double rateofinterest,double time)
+	{
+		double simpleinterest , compoundinterest;
+		simpleinterest=(pricipleamount * time * rateofinterest)/100;
+		compoundinterest=pricipleamount * Math.pow(1.0 + rateofinterest / 100.0 , time) - pricipleamount;
+	}
+}
